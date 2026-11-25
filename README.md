@@ -54,11 +54,11 @@ Le LLM reçoit le ticket comme une **donnée** (et non une instruction), répond
 Mesurés sur les 825 tickets synthétiques (`seed=42`). Le jeu contient volontairement des formulations indirectes (« rien ne se passe, aucun voyant », « la batterie a gonflé ») que des mots-clés ne captent pas.
 
 | Indicateur | Règles | LLM |
-|---|---|---|
-| Accuracy (catégorie) | 67,0 % | à mesurer avec `evaluate.py --backend llm` |
-| Macro-F1 | 0,72 | à mesurer |
-| Non-conformité : précision / rappel | 0,92 / 0,63 | à mesurer |
-| Escalade sécurité : précision / rappel | 1,00 / 0,57 | à mesurer |
+|---|---|
+| Accuracy (catégorie) | 67,0 % | 
+| Macro-F1 | 0,72 |
+| Non-conformité : précision / rappel | 0,92 / 0,63 | 
+| Escalade sécurité : précision / rappel | 1,00 / 0,57 |
 
 Lecture : la baseline est précise quand elle se prononce, mais elle **rate près de la moitié des risques sécurité** et classe par défaut en « demande_info » tout ce qu'elle ne reconnaît pas. C'est exactement l'écart que le LLM doit combler. Ajoutez vos propres résultats LLM dans la colonne de droite.
 
